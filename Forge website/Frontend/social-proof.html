@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Proof - FORGE | Healthy Meal Prep</title>
+  <meta name="description" content="See what nutritionists, gyms, and athletes say about FORGE meal prep service">
+  <link rel="icon" type="image/jpeg" href="forge-favicon.jpeg">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  
+  <!-- Stylesheet -->
+  <!-- Favicon -->
+  
+  <!-- Stylesheet -->
+</head>
+<body>
+
+  <!-- Header with Centered Logo -->
+  <div class="top-logo-section">
+    <a href="index.html">
+      <img src="forge-logo.jpeg" alt="FORGE Logo" class="centered-logo">
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header">
+    <div class="header-container">
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="social-proof.html" class="active">Social Proof</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+      
+      <!-- User Account Circle - Top Right -->
+      <div class="user-section">
+        <div class="welcome-text" id="welcomeText">Welcome Back!</div>
+        <div class="user-profile-circle" onclick="toggleUserMenu()">
+          <img src="" alt="Profile" class="profile-photo" id="profilePhoto" style="display: none;">
+          <svg class="default-user-icon" id="defaultUserIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+          </svg>
+        </div>
+        
+        <!-- User Dropdown Menu -->
+        <div class="user-dropdown" id="userDropdown">
+          <div class="dropdown-header" id="dropdownHeader">
+            <div class="dropdown-profile-circle">
+              <img src="" alt="" class="dropdown-profile-photo" id="dropdownProfilePhoto" style="display: none;">
+              <svg class="dropdown-default-icon" id="dropdownDefaultIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+            </div>
+            <strong id="dropdownUserName">Guest User</strong>
+          </div>
+          <a href="login.html" id="loginLink">Sign In</a>
+          <a href="register.html" id="registerLink">Register</a>
+          <a href="#" id="logoutBtn" style="display: none;" onclick="logout(); return false;">Logout</a>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="social-proof.html">Social Proof</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section class="page-header">
+    <h1>Trusted by Professionals</h1>
+    <p>What Nutritionists, Gyms & Athletes Say About FORGE</p>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      
+      <h2>Nutritionist Approvals</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h3>Dr. Sarah Mitchell, RD</h3>
+            <p class="credential">Registered Dietitian, Sports Nutrition Specialist</p>
+          </div>
+          <p class="testimonial-text">
+            "FORGE delivers exactly what athletes need: precision nutrition with no guesswork. 
+            The macro balance is spot-on, and the quality of ingredients meets clinical standards. 
+            I recommend FORGE to all my performance clients."
+          </p>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h3>James Rodriguez, MS, CNS</h3>
+            <p class="credential">Clinical Nutritionist, Former Olympic Advisor</p>
+          </div>
+          <p class="testimonial-text">
+            "In my 15 years working with elite athletes, FORGE is the only meal prep service 
+            I trust completely. The attention to detail in portion control and nutrient timing 
+            is exceptional."
+          </p>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h3>Dr. Emily Chen, PhD</h3>
+            <p class="credential">Sports Nutritionist, University Researcher</p>
+          </div>
+          <p class="testimonial-text">
+            "What sets FORGE apart is their science-based approach. Every meal is designed 
+            with evidence-based nutrition principles. This isn't just food—it's fuel optimized 
+            for performance."
+          </p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+
+      <h2>Partner Gyms & Fitness Centers</h2>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <h3>IronHouse Gym</h3>
+          <p class="location">Los Angeles, CA</p>
+          <p>
+            "We've partnered with FORGE to provide our members with the nutrition they need 
+            to match their training intensity. The results speak for themselves."
+          </p>
+          <p class="signature">— Mike Stevens, Owner</p>
+        </div>
+
+        <div class="partner-card">
+          <h3>Apex Performance Center</h3>
+          <p class="location">Miami, FL</p>
+          <p>
+            "FORGE is our exclusive meal prep partner. Their commitment to quality aligns 
+            perfectly with our training philosophy. Our athletes love the convenience and taste."
+          </p>
+          <p class="signature">— Jennifer Lee, Head Coach</p>
+        </div>
+
+        <div class="partner-card">
+          <h3>Elite Strength & Conditioning</h3>
+          <p class="location">New York, NY</p>
+          <p>
+            "We recommend FORGE to every member serious about their fitness goals. 
+            The macro precision makes tracking easy, and the quality is unmatched."
+          </p>
+          <p class="signature">— Robert Martinez, Director</p>
+        </div>
+
+        <div class="partner-card">
+          <h3>CrossFit Revolution</h3>
+          <p class="location">Austin, TX</p>
+          <p>
+            "Our community has seen incredible transformations since partnering with FORGE. 
+            When training is intense, nutrition can't be an afterthought."
+          </p>
+          <p class="signature">— Amanda Brooks, Owner</p>
+        </div>
+      </div>
+
+      <h2>Athlete Testimonials</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h3>Marcus Thompson</h3>
+            <p class="credential">Professional Bodybuilder</p>
+          </div>
+          <p class="testimonial-text">
+            "Contest prep used to mean hours of meal prep. FORGE changed the game. 
+            I hit stage-ready condition easier than ever. No more guessing, just results."
+          </p>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h3>Rachel Kim</h3>
+            <p class="credential">Marathon Runner</p>
+          </div>
+          <p class="testimonial-text">
+            "Training for marathons demands proper fueling. FORGE gives me exactly what I need, 
+            when I need it. My recovery time has improved dramatically."
+          </p>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h3>David Santos</h3>
+            <p class="credential">MMA Fighter</p>
+          </div>
+          <p class="testimonial-text">
+            "Making weight while maintaining strength is critical. FORGE makes it effortless. 
+            The precision nutrition lets me cut or bulk with complete confidence."
+          </p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <h2>By The Numbers</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>10,000+</h3>
+            <p>Active Subscribers</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Partner Gyms</p>
+          </div>
+          <div class="stat-item">
+            <h3>25+</h3>
+            <p>Nutritionist Approvals</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9/5</h3>
+            <p>Average Rating</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Join Thousands of Satisfied Athletes</h2>
+        <p>Experience the FORGE difference for yourself</p>
+        <a href="subscription.html" class="btn-cta">Start Your Journey</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FORGE</h4>
+        <p>Premium meal prep for serious athletes</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="social-proof.html">Social Proof</a>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@forge.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FORGE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
