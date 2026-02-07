@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - FORGE | Healthy Meal Prep</title>
+  <meta name="description" content="Learn about FORGE - our mission to provide premium meal prep for athletes and fitness enthusiasts">
+  <link rel="icon" type="image/jpeg" href="forge-favicon.jpeg">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  
+  <!-- Stylesheet -->
+  <!-- Favicon -->
+  
+  <!-- Stylesheet -->
+</head>
+<body>
+
+  <!-- Header with Centered Logo -->
+  <div class="top-logo-section">
+    <a href="index.html">
+      <img src="forge-logo.jpeg" alt="FORGE Logo" class="centered-logo">
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header">
+    <div class="header-container">
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="social-proof.html">Social Proof</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+      
+      <!-- User Account Circle - Top Right -->
+      <div class="user-section">
+        <div class="welcome-text" id="welcomeText">Welcome Back!</div>
+        <div class="user-profile-circle" onclick="toggleUserMenu()">
+          <img src="" alt="Profile" class="profile-photo" id="profilePhoto" style="display: none;">
+          <svg class="default-user-icon" id="defaultUserIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+          </svg>
+        </div>
+        
+        <!-- User Dropdown Menu -->
+        <div class="user-dropdown" id="userDropdown">
+          <div class="dropdown-header" id="dropdownHeader">
+            <div class="dropdown-profile-circle">
+              <img src="" alt="" class="dropdown-profile-photo" id="dropdownProfilePhoto" style="display: none;">
+              <svg class="dropdown-default-icon" id="dropdownDefaultIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+            </div>
+            <strong id="dropdownUserName">Guest User</strong>
+          </div>
+          <a href="login.html" id="loginLink">Sign In</a>
+          <a href="register.html" id="registerLink">Register</a>
+          <a href="#" id="logoutBtn" style="display: none;" onclick="logout(); return false;">Logout</a>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="social-proof.html">Social Proof</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section class="page-header">
+    <h1>About FORGE</h1>
+    <p>Where Nutrition Meets Performance</p>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>
+        At FORGE, we believe that your body is your most important tool. Whether you're an athlete pushing for peak performance, 
+        someone committed to fat loss, or simply taking your health seriously, nutrition is the foundation of success.
+      </p>
+      <p>
+        We deliver precision-portioned, high-quality meals designed specifically for people who refuse to make excuses. 
+        No gimmicks, no shortcuts—just food that works.
+      </p>
+
+      <h2>What Makes Us Different</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>Precision Nutrition</h3>
+          <p>Every meal is carefully calculated to meet your macronutrient needs</p>
+        </div>
+        <div class="feature-item">
+          <h3>Quality Ingredients</h3>
+          <p>We source only the finest ingredients for maximum nutrition and taste</p>
+        </div>
+        <div class="feature-item">
+          <h3>Athlete-Focused</h3>
+          <p>Designed by athletes, for athletes and fitness enthusiasts</p>
+        </div>
+        <div class="feature-item">
+          <h3>Convenience</h3>
+          <p>Delivered fresh to your door—more time for training, less time cooking</p>
+        </div>
+      </div>
+
+      <h2>Our Values</h2>
+      <p>
+        <strong>Excellence:</strong> We never compromise on quality.<br>
+        <strong>Integrity:</strong> Transparent nutrition information, always.<br>
+        <strong>Performance:</strong> Your results are our success.<br>
+        <strong>Community:</strong> We're building a tribe of dedicated individuals who take their health seriously.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FORGE</h4>
+        <p>Premium meal prep for serious athletes</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="social-proof.html">Social Proof</a>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@forge.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FORGE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
