@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - FORGE</title>
+  <link rel="icon" type="image/jpeg" href="forge-favicon.jpeg">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
+  
+  <!-- Stylesheet -->
+</head>
+<body>
+
+  <!-- Header with Centered Logo -->
+  <div class="top-logo-section">
+    <a href="index.html">
+      <img src="forge-logo.jpeg" alt="FORGE Logo" class="centered-logo">
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header">
+    <div class="header-container">
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="social-proof.html">Social Proof</a></li>
+          <li><a href="newsletter.html" class="active">Newsletter</a></li>
+        </ul>
+      </nav>
+      
+      <!-- User Account Circle - Top Right -->
+      <div class="user-section">
+        <div class="welcome-text" id="welcomeText">Welcome Back!</div>
+        <div class="user-profile-circle" onclick="toggleUserMenu()">
+          <img src="" alt="Profile" class="profile-photo" id="profilePhoto" style="display: none;">
+          <svg class="default-user-icon" id="defaultUserIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+          </svg>
+        </div>
+        
+        <!-- User Dropdown Menu -->
+        <div class="user-dropdown" id="userDropdown">
+          <div class="dropdown-header" id="dropdownHeader">
+            <div class="dropdown-profile-circle">
+              <img src="" alt="" class="dropdown-profile-photo" id="dropdownProfilePhoto" style="display: none;">
+              <svg class="dropdown-default-icon" id="dropdownDefaultIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+              </svg>
+            </div>
+            <strong id="dropdownUserName">Guest User</strong>
+          </div>
+          <a href="login.html" id="loginLink">Sign In</a>
+          <a href="register.html" id="registerLink">Register</a>
+          <a href="#" id="logoutBtn" style="display: none;" onclick="logout(); return false;">Logout</a>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="social-proof.html">Social Proof</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section class="page-header">
+    <h1>Terms & Conditions</h1>
+    <p>Last Updated: February 7, 2026</p>
+  </section>
+
+  <section class="content-section">
+    <div class="container legal-content">
+      
+      <h2>1. Agreement to Terms</h2>
+      <p>By accessing or using FORGE's services, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.</p>
+
+      <h2>2. Subscription Services</h2>
+      <p><strong>2.1 Plans:</strong> FORGE offers Daily, Weekly, and Monthly meal prep subscription plans.</p>
+      <p><strong>2.2 Payment:</strong> Payments are processed securely. Subscriptions renew automatically unless canceled.</p>
+      <p><strong>2.3 Cancellation:</strong> You may cancel your subscription at any time. Cancellations take effect at the end of the current billing period.</p>
+
+      <h2>3. Delivery</h2>
+      <p><strong>3.1 Service Area:</strong> FORGE delivers to specified service areas. Check availability at checkout.</p>
+      <p><strong>3.2 Delivery Times:</strong> We aim for on-time delivery but cannot guarantee specific times due to factors beyond our control.</p>
+      <p><strong>3.3 Failed Delivery:</strong> If delivery fails due to incorrect address or unavailability, additional fees may apply for redelivery.</p>
+
+      <h2>4. Food Safety & Allergies</h2>
+      <p><strong>4.1 Allergens:</strong> While we take precautions, our kitchen handles common allergens. We cannot guarantee allergen-free meals.</p>
+      <p><strong>4.2 Storage:</strong> Meals must be refrigerated immediately upon receipt and consumed within recommended timeframes.</p>
+      <p><strong>4.3 Disclaimer:</strong> FORGE is not liable for adverse reactions to ingredients. Consult a healthcare provider for dietary concerns.</p>
+
+      <h2>5. Refunds & Returns</h2>
+      <p><strong>5.1 Quality Issues:</strong> If you receive damaged or spoiled meals, contact us within 24 hours for a refund or replacement.</p>
+      <p><strong>5.2 Taste Preferences:</strong> Refunds are not provided for personal taste preferences.</p>
+
+      <h2>6. User Accounts</h2>
+      <p><strong>6.1 Account Security:</strong> You are responsible for maintaining the confidentiality of your account credentials.</p>
+      <p><strong>6.2 Accurate Information:</strong> You must provide accurate delivery and payment information.</p>
+
+      <h2>7. Intellectual Property</h2>
+      <p>All content on FORGE's website, including logos, text, and images, is protected by copyright and trademark laws.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>FORGE shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services.</p>
+
+      <h2>9. Changes to Terms</h2>
+      <p>We reserve the right to modify these Terms at any time. Continued use of our services constitutes acceptance of updated Terms.</p>
+
+      <h2>10. Contact Information</h2>
+      <p>For questions about these Terms, contact us at legal@forge.com</p>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>FORGE</h4>
+        <p>Premium meal prep for serious athletes</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="social-proof.html">Social Proof</a>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@forge.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FORGE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
