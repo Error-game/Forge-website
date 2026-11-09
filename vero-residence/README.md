@@ -25,27 +25,32 @@ choice is remembered on that device. `?lang=ar` or `?lang=en` in the address for
 ```bash
 npm install
 npm run dev       # live preview while editing
-npm run build     # builds the finished site into dist/
+npm run build     # rebuilds the finished site into site/ (commit site/ afterwards)
 ```
+
+`site/` is the finished site, already built and committed, so a host can serve it as it is. Do not
+point a host at this folder itself: its `index.html` is the source and shows a blank page unless built.
 
 To make an upload-ready zip (with `index.html` at the top of the zip, not inside a folder):
 
 ```bash
-npm run build && cd dist && zip -r ../vero-residence-site.zip . && cd ..
+npm run build && rm -f vero-residence-site.zip && (cd site && zip -r ../vero-residence-site.zip .)
 ```
 
 ## Putting it online (free)
 
-Upload `vero-residence-site.zip` to either:
+**From GitHub with Cloudflare Pages** (updates on every push to the chosen branch):
+
+- Production branch: the branch that holds this folder
+- Framework preset: None
+- Build command: leave empty
+- Build output directory: `vero-residence/site`
+- Root directory: leave empty
+
+**Or upload the zip** `vero-residence-site.zip` (it holds the same files as `site/`):
 
 - Netlify Drop: https://app.netlify.com/drop
 - Cloudflare: Workers & Pages → Create application → Pages → Upload assets (Direct Upload)
-
-To update the site later, build a new zip and upload it to the same project (Netlify: the site's
-Deploys page; Cloudflare: the project's "Create new deployment").
-
-Or connect a GitHub repository instead, so it rebuilds on every push: build command `npm run build`,
-output folder `dist`, root directory `vero-residence` if the project stays in this folder.
 
 ## Before it goes public
 

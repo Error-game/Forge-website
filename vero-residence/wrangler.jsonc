@@ -1,11 +1,10 @@
 {
-  // Used only if the site is deployed to Cloudflare Workers from GitHub (not needed for direct upload).
+  // Used only if the site is deployed to Cloudflare Workers from GitHub with root directory vero-residence.
+  // site/ is already built and committed, so no build step is needed.
   "name": "vero-residence",
   "compatibility_date": "2025-10-01",
-  "build": { "command": "npm run build" },
-  // Serve dist/ as static files. The page is a single screen, so any unknown path shows it too.
   "assets": {
-    "directory": "./dist",
+    "directory": "./site",
     "not_found_handling": "single-page-application"
   }
 }
