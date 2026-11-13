@@ -1,4 +1,4 @@
-# Used only if the site is connected to Netlify from GitHub (not needed for drag-and-drop upload).
+# Used only if the site is connected to Netlify from GitHub (set "Base directory" to vero-residence).
+# site/ is already built and committed, so no build step is needed.
 [build]
-  command = "npm run build"
-  publish = "dist"
+  publish = "site"

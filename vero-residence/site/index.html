@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2f4f4" />
+    <title>Vero Residence</title>
+    <meta name="description" content="Vero Residence: a modern residential development in Lebanon. Quality living, thoughtfully built." />
+    <meta property="og:title" content="Vero Residence" />
+    <meta property="og:description" content="Quality living, thoughtfully built." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <!-- Sets the language and direction before the first paint, so Arabic never flashes as English. -->
+    <script>
+      (function () {
+        try {
+          var asked = new URLSearchParams(location.search).get("lang");
+          var saved = null;
+          try { saved = localStorage.getItem("vero-lang"); } catch (e) {} // blocked storage: fall back to the browser language
+          var lang = asked || saved || ((navigator.language || "").slice(0, 2) === "ar" ? "ar" : "en");
+          if (lang !== "ar") lang = "en";
+          document.documentElement.lang = lang;
+          document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-B0DXXxBT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DZNYjpfT.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
