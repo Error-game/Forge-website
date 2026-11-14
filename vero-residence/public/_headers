@@ -1,3 +1,0 @@
-# Read by free static hosts (Cloudflare Pages, Netlify): hashed files never change, so cache them for a year.
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable

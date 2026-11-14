@@ -1,4 +1,0 @@
-# Used only if the site is connected to Netlify from GitHub (set "Base directory" to vero-residence).
-# site/ is already built and committed, so no build step is needed.
-[build]
-  publish = "site"
